@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A Agência de Viagens encontra o hotel certo pra você!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Agência de Viagens</title>
+  </head>
+ <body>
+    <header>
+        <h1><img class="img-logo" src="./imagens/local-logo.png" alt="local-logo">Agência de Viagens</h1>
+    </header>
+
+    <div class="plano-fundo-formulario">
+        <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                <h3 class="titulo-form"><img class="img-titulo-form" src="./imagens/aviao.png" alt="aviao">Solicite seu Orçamento</h3>      
+                <h3 class="sub-titulo-form">Informe seus Dados</h3>
+
+            <div class="ch">         
+                <label>Nome</label><br>
+                <input class="input-90" placeholder="Nome completo" type="text" name="nome" minlength="4" maxlength="50" required>
+            </div>
+
+            <div class="ch">
+                <label>E-mail</label><br>
+                <input class="input-90" placeholder="exemplo@email.com.br" type="email" name="email" minlength="7" maxlength="100" required>
+            </div>
+            
+            <div class="ch">
+                <label>Celular</label><br>
+                <input class="input-90" placeholder="(xx) xxxxx-xxxx" type="tel" name="telefone" minlength="16" maxlength="50" required>
+            </div>
+
+            <div class="box_wrap">
+              <div class="div_box1a">  
+                <label>Data de Ida</label><br>
+                <input class="input-90" placeholder="dd/mm/aaaa" type="date" name="data-ida" required>
+              </div>
+
+              <div class="div_box2a">
+                <label>Data de Volta</label><br>
+                <input class="input-90" placeholder="dd/mm/aaaa" type="date" name="data-volta" required>
+              </div>  
+            </div>
+
+            <div class="box_wrap">
+              <div class="div_box1a"> 
+                <label>Origem</label><br>
+                <input class="input-90" placeholder="partindo de" type="text" name="origem" minlength="3" maxlength="40" required>
+              </div> 
+              <div class="div_box2a">  
+                <label>Destino</label><br>
+                <input class="input-90" placeholder="indo para" type="text" name="destino" minlength="4" maxlength="40" required>
+              </div>
+            </div>
+
+            <h3 class="ch">Quarto com cama infantil?</h3>
+            <div class="ch">
+                <input type="radio" name="resposta" id="cama-sim" value="sim"/>
+                <label for="cama-sim">Sim</label>
+
+                <input type="radio" name="resposta" id="cama-nao" value="nao"/>
+                <label for="cama-nao">Não</label>
+            </div>
+
+            <h3 class="ch">Preferências da Hospedagem?</h3>
+            <div class="ch">
+                <input type="checkbox" name="preferencias[]" value="piscina"/>
+                <label>Piscina</label>
+
+                <input type="checkbox" name="preferencias[]" value="wifi"/>
+                <label>Wi-fi</label>
+
+                <input type="checkbox" name="preferencias[]" value="garagem"/>
+                <label>Garagem</label>
+
+                <input type="checkbox" name="preferencias[]" value="suite"/>
+                <label>Suíte</label>
+            </div>
+                <button type="submit">Solicitar Orçamento</button>
+        </form>
+    </div>
+
+    <section class="ofertas-area">
+        <h2 class="ofertas-titulo">Ofertas</h2>
+        <h3 class="ofertas-descricao">Com até <span>50%</span> de desconto.</h3>
+        <div class="ofertas-imagens">
+            <figure class="oferta-imagem-destaque">
+                <img src="./imagens/rio.jpg" alt="Rio de Janeiro - Ciadade Maravilhosa" title="Rio de Janeiro - Brasil">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+            <div class="oferta-quatro-imagens">
+                <figure>
+                    <img src="./imagens/manaus.jpg" alt="Manaus" title="Manaus">
+                    <figcaption>Manaus</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/niteroi.jpg" alt="Ponte Rio-Niterói" title="Ponte Rio-Niterói - RJ">
+                    <figcaption>Rio de Janeiro</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/saopaulo.jpg" alt="São Paulo - SP" title="São Paulo - Brasil">
+                    <figcaption>São Paulo</figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/maranhao.jpg" alt="Maranhão" title="Maranhão - Brasil">
+                    <figcaption>Maranhão</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="natureza-area">
+            <h2 class="natureza-titulo">Explore a Natureza</h2>
+            <h3 class="natureza-descricao">Viaje conosco e veja o melhor que a natureza tem a oferecer.</h3>
+            <div class="natureza-duas-imagens">
+                <figure class="natureza-imagem">
+                    <img src="./imagens/lencol.jpg" alt="Lençois Maranhenses - Brasil" title="Lençois Maranhenses - Brasil">
+                    <div>
+                        <h3>Lençois Maranhenses, Brasil</h3>
+                        <p>Ida e volta a partir de R$79</p>
+                    </div>
+                </figure>
+                <figure class="natureza-imagem direita">
+                    <img src="./imagens/goias.jpg" alt="Cachoeira Santa bárbara - GO" title="Cachoeira Santa Bárbara - GO">
+                    <div>
+                        <h3>Cachoeira Santa Bárbara, Brasil</h3>
+                        <p>Ida e volta por R$139</p>
+                    </div>
+                </figure>
+            </div>
+    </section>
+</main>
+<footer>
+    <div class="container-rodape">
+        <div class="container-redes-sociais">
+          <a href="tel:+5521978750036" target="_blank"> <img src="../site_proprio/imagens/whatsapp.png" alt="Logo Whatsapp" /></a>
+          <a href="https://www.linkedin.com/in/carlos-eduardosouza/" target="_blank"><img src="../site_proprio/imagens/linkedin-logo.webp" alt="Logo Linkedin"/></a>          
+          <a href="https://github.com/CEduardoSouza" target="_blank"><img src="../site_proprio/imagens/githubpreto.webp" alt="Logo GitHub" /></a>
+          <a href="https://cgmmar.com.br/" target="_blank"><img src="../site_proprio/imagens/website-icon-symbol-on-transparent-background-free-png.webp" alt="Logo www"/></a>
+        </div>
+        <div class="container-rodape_p">
+          <p>Desenvolvido por <span>© Copyright - Carlos Eduardo Souza</span></p>
+        </div>
+         <div class="container-descricao">
+        <a href="index.html"><p>Home</p></a>
+         </div>
+      </div>    
+</footer>
+ </body>
+
+</html>
